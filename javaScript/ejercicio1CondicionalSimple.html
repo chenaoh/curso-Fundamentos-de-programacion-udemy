@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio 2</title>
+	</head>
+    <body>
+		<h2>La tienda "Mis Zapatos" está de aniversario, por esa 
+		razón se está realizando un descuento del 50% en compras
+		mayores o iguales a los $ 100.000. Haga un algoritmo que
+		permita validar cuando se debe aplicar un descuento a un
+		cliente, en caso de que el descuento sea valido se debe 
+		informar al usuario indicando el valor descontado.</h2>
+		<hr>
+		<script>
+			document.write("<h2>");
+				
+				var valorCompra,descuento;
+				valorCompra=parseFloat(prompt("Ingrese el valor de la compra"));
+				document.write("Valor Compra: "+valorCompra+"<br>");
+				
+				
+				descuento=0;
+				
+				if(valorCompra>=100000){
+					descuento=valorCompra*0.5;
+					valorCompra=valorCompra-descuento;
+					document.write("Se aplicó un descuento del 50% equivalente a: "+descuento+"<br>");		
+				}
+				document.write("Valor Final: "+valorCompra+"<br>");
+			
+			document.write("</h2>");
+		</script>
+	<body> 	
+</html>

@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio condicional Multiple con If</title>
+	</head>
+    <h2>Algoritmo que basado en la siguiente tabla permita leer un 
+	número e imprima el nombre de la estación correspondiente 
+	<br>
+	<ul>
+		<li>| 1 | Invierno</li>
+		<li>| 2 | Verano</li>
+		<li>| 3 | Otoño</li>
+		<li>| 4 | Primavera</li>
+	</ul>
+</h2>
+		<hr>
+		<script>
+			document.write("<h2>");
+			
+			var codigo, menu;
+			
+			menu="Menu\n\n";
+			menu+="1. Invierno\n";
+			menu+="2. Verano\n";
+			menu+="3. Otoño\n";
+			menu+="4. Primavera\n\n";
+			menu+="Ingrese el codigo\n";
+			
+			codigo=parseInt(prompt(menu));
+			
+			switch(codigo){
+				case 1: document.write("Invierno");
+						break;
+				case 2: document.write("Verano");
+						break;
+				case 3: document.write("Otoño");
+						break;
+				case 4: document.write("Primavera");
+						break;
+				default:document.write("El codigo no existe!");
+			}
+						
+			document.write("</h2>");
+		</script>
+	<body> 	
+</html>

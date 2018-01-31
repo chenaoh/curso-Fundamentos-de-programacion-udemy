@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio 1 condicional anidada</title>
+	</head>
+    <h2>Cree un algoritmo que lea dos números reales y determine
+	cuál de ellos es el mayor, cual el menor o Si los números son
+	iguales</h2>
+		<hr>
+		<script>
+			document.write("<h2>");
+				var num1,num2;
+				
+				num1=parseInt(prompt("Ingrese el numero 1"));
+				num2=parseInt(prompt("Ingrese el numero 2"));
+				
+				if(num1>num2){
+					document.write("Numero 1 es Mayor ");
+					document.write(num1+" es Mayor que "+num2);
+				}
+				
+				if(num2>num1){
+						document.write("Numero 2 es Mayor ");
+						document.write(num2+" es Mayor que "+num1);
+				}
+					
+				if(num2==num1){
+						document.write("Son iguales ");
+						document.write(num1+" es igual a "+num2);
+				}
+				
+						
+			
+			document.write("</h2>");
+		</script>
+	<body> 	
+</html>

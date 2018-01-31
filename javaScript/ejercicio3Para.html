@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio 3 Para</title>
+	</head>
+    <body>
+		<h2>algoritmo que reciba como entrada el sueldo de una 
+		persona y sus horas extras trabajadas y luego imprima el
+		Sueldo total de esta persona dado que cada hora extra 
+		vale $3000.</h2>
+		<hr>
+		<script>
+			document.write("<h2>");
+			
+			var sueldoBase,cantHorasExtras,sueldoTotal,totalHorasExt;
+			var cantPersonas, i;
+			
+			cantPersonas=parseInt(prompt("Ingrese la cantidad de personas"));
+			
+			for(i=0; i<cantPersonas; i++){
+			
+			
+			sueldoBase=parseFloat(prompt("Ingrese el sueldo Base"));
+			document.write("Sueldo Base= "+sueldoBase+"<br>");
+			cantHorasExtras=parseFloat(prompt("Ingrese la cantidad de horas extras"));
+			document.write("Cantidad horas extras= "+cantHorasExtras+"<br>");
+			
+			totalHorasExt=cantHorasExtras*3000;
+			sueldoTotal=sueldoBase+totalHorasExt;
+			
+			document.write("El sueldo total es= "+sueldoTotal+"<br><br>");
+			
+			
+			}	
+			
+			
+			
+			document.write("</h2>");
+		</script>
+	<body> 	
+</html>

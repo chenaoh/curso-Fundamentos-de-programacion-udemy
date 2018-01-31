@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio Ciclos Anidados</title>
+	</head>
+    <body>
+		<h2>Algoritmo que muestre la tabla de multiplicar de 
+		los numeros del 1 al 10</h2>
+		<hr>
+		<script>
+			document.write("<h2>");
+			
+			var i,j,valor,max;
+			
+			max=parseInt(prompt("Ingrese la cant de numeros a multiplicar"));
+				
+			for(i=1; i<=max; i++)
+			{
+				for(j=0; j<=5; j++)
+				{
+					valor=i*j;
+					document.write(i+" * "+j+" = "+valor+"<br>");		
+				}
+				document.write("<br>");
+				document.write("*******************************");
+				document.write("<br>");
+			}
+			
+			document.write("</h2>");
+		</script>
+	<body> 	
+</html>

@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio condicional Multiple Switch Case</title>
+	</head>
+    <h2>Algoritmo que basado en un codigo permita realizar
+	operaciones matematicas con 2 numeros reales teniendo en 
+	cuenta lo siguiente:
+	<br>
+	<ul>
+		<li>| 1 | Suma</li>
+		<li>| 2 | Resta</li>
+		<li>| 3 | Multiplicación</li>
+		<li>| 4 | division</li>
+	</ul>
+	El sistema se deberá repetir las veces que el usuario quiera.
+</h2>
+		<hr>
+		<script>
+			document.write("<h2>");
+			
+			var codigo, num1,num2,suma, resta, div, mult;
+			var resp, menu, preg;
+		for(preg="si"; preg=="si"; preg=prompt("Desea continuar? ingrese si, o de lo contrario el sistema terminará")){
+			/////
+			num1=parseInt(prompt("Ingrese el numero 1"));
+			num2=parseInt(prompt("Ingrese el numero 2"));
+			
+			menu="Menu\n\n";
+			menu+="1. Suma\n";
+			menu+="2. Resta\n";
+			menu+="3. Multiplicación\n";
+			menu+="4. division\n\n";
+			menu+="Ingrese el codigo\n\n";
+			
+			codigo=parseInt(prompt(menu));
+			
+			switch(codigo){
+				case 1: suma=num1+num2;
+						resp="La suma es: "+suma+"<br>";
+						break;
+				case 2: resta=num1-num2;
+						resp="La resta es: "+resta+"<br>";
+						break;
+				case 3: mult=num1*num2;
+						resp="La multiplicacion es: "+mult+"<br>";
+						break;
+				case 4: 
+						if(num2>0){
+							div=num1/num2;
+							resp="La division es: "+div+"<br>";
+						}else{
+							resp="El segundo numero debe ser Mayor a 0"+"<br>"
+						}
+									
+						break;
+				default:resp="El codigo no existe!"+"<br>";
+			}
+			document.write(resp);
+			
+			
+			/////
+			
+				
+			
+			}
+			
+						
+			document.write("</h2>");
+		</script>
+	<body> 	
+</html>

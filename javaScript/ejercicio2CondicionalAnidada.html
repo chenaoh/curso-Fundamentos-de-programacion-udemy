@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio 2 condicional anidada</title>
+	</head>
+    <h2>De un operario se conoce su sueldo y los años de antigüedad.
+	Se pide crear un programa que lea los datos de entrada e informe:
+	<br>
+	<ul>
+	<li>Si el sueldo es inferior a 500 y su antigüedad es igual o 
+	superior a 10 años, otorgarle un aumento del 20%, mostrar 
+	el sueldo a pagar.</li>
+	<li>Si el sueldo es inferior a 500 pero su antigüedad es menor 
+	a 10 años, otorgarle un aumento de 5%.</li>
+	<li>Si el sueldo es mayor o igual a 500 mostrar el sueldo en 
+	pantalla sin cambios.</li></ul>
+</h2>
+		<hr>
+		<script>
+			document.write("<h2>");
+			
+			var sueldo,antiguedad,aumento;
+			var mensaje="";
+			
+			sueldo=parseFloat(prompt("Ingrese el sueldo actual"));
+			document.write("Sueldo= "+sueldo+"<br>");
+			antiguedad=parseInt(prompt("Ingrese los años de antiguedad"));
+			document.write("Antiguedad= "+antiguedad+"<br>");
+			aumento=0;
+			
+			if(sueldo<500 && antiguedad>=10){
+				aumento=sueldo*0.2;
+				sueldo=sueldo+aumento;
+				mensaje="Usted tiene un aumento del 20%, su sueldo nuevo es: "+sueldo;
+			}
+			else{
+				if(sueldo<500 && antiguedad<10){
+					aumento=sueldo*0.05;
+					sueldo=sueldo+aumento;
+					mensaje="Usted tiene un aumento del 5%, su sueldo nuevo es: "+sueldo;
+				}else{
+					if(sueldo>=500){
+						mensaje="Usted no tiene ningun aumento, su sueldo es: "+sueldo;
+					}
+				}
+			}
+			
+			document.write(mensaje);
+						
+			document.write("</h2>");
+		</script>
+	<body> 	
+</html>
